@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .d25 {
+        position: relative;
+        box-sizing: border-box;
+        width: 300px;
+        height: 300px;
+        margin: 0;
+        padding: 0;
+        border-left: 2px solid green;
+        border-right: 2px solid green;
+        border-top: 2px solid #2B2F6E;
+        border-radius: 50%;
+        }
+
+        .d25:before {
+        position: absolute;
+        content: '';
+        width: 150px;
+        height: 2px;
+        background: #2B2F6E;
+        top: 0;
+        left: 0;/* Translate X и Y равен (из формулы прямоугольного треугольника c*c = a*a + b*b) корню из суммы двух квадратов радиуса (половина стороны вкадрата), минус радиус, т.е. ((r*r + r*r) - r) */
+        transform-origin: bottom left;
+        }
+
+        .d25:after {
+        position: absolute;
+        content: '';
+        width: 150px;
+        height: 2px;
+        background: #2B2F6E;
+        top: 41.93px;
+        right: 41.93px;
+        transform: rotate(-45deg);/* Translate X и Y равен (из формулы прямоугольного треугольника c*c = a*a + b*b) корню из суммы двух квадратов радиуса (половина стороны вкадрата), минус радиус, т.е. ((r*r + r*r) - r) */
+        transform-origin: bottom right;
+        }
+    </style>
+    <div class="d25"></div>
+</body>
+</html>
