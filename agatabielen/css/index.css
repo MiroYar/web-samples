@@ -19,23 +19,14 @@ body {
     font-style: normal;
 }
 
-/* body::after {
-    position: absolute;
-    z-index: -1;
-    top: calc(50% - 194px);
-    left: calc(50% - 756px);
-    content: 'Catalogue';
-    font-size: 388px;
-    color: #ede0df;
-} */
-
 .wrapper {
     overflow-x: hidden;
 }
 
-button {
+button, a {
     /* убрать все стили */
     all: unset;
+    cursor: default;
 }
 
 /* ШАПКА */
@@ -228,6 +219,10 @@ button {
     list-style-type: none;
 }
 
+.submenu__item {
+    display: flex;
+}
+
 .submenu__btn {
     display: block;
     margin-left: auto;
@@ -256,6 +251,7 @@ button {
 
 /* КОНТЕНТ */
 .mainpage {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -263,6 +259,13 @@ button {
     grid-row-gap: 40px;
     max-width: 1440px;
     margin: 160px auto;
+}
+
+.mainpage__bg {
+    position: absolute;
+    z-index: -1;
+    top: calc(50% - 191px);
+    left: calc(50% - 694px);
 }
 
 .mainpage__wrap {
@@ -328,11 +331,11 @@ button {
 }
 
 .mainpage__wrap-list:nth-child(odd) {
-    align-content: end;
+    align-content: start;
 }
 
 .mainpage__wrap-list:nth-child(even) {
-    align-content: start;
+    align-content: end;
 }
 
 .list__item {
@@ -522,15 +525,31 @@ button {
 }
 
 .collpage01__right {
+    position: relative;
+    z-index: -1;
     display: grid;
     align-content: center;
     justify-content: center;
+    justify-items: center;
     background: #ede0df;
 }
 
+.collpage01__bgtracery {
+    position: absolute;
+    z-index: -1;
+}
+
 .collpage02__left {
+    position: relative;
+    z-index: -1;
     padding-left: 190px;
     background: #e5eaeb;
+}
+
+.collpage02__bgtracery {
+    position: absolute;
+    z-index: -1;
+    left: 0;
 }
 
 .collpage02__right {
@@ -566,6 +585,8 @@ button {
 }
 
 .collpage03__right {
+    position: relative;
+    z-index: -1;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -573,6 +594,11 @@ button {
     grid-template-rows: auto auto 304px auto auto;
     padding: 120px 0 60px 0;
     background: #edded5;
+}
+
+.collpage03__bgtracery {
+    position: absolute;
+    z-index: -1;
 }
 
 .collpage03__title {
@@ -622,9 +648,19 @@ button {
 }
 
 .collpage04__top {
+    position: relative;
+    z-index: -1;
+    display: grid;
+    justify-items: center;
     height: 811px;
-    background: #ede0df;
+    background: #e5eaeb;
     padding-top: 270px;
+}
+
+.collpage04__bgtracery {
+    position: absolute;
+    z-index: -1;
+    top: -340px;
 }
 
 .collpage04__wrap {
