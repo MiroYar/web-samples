@@ -9,14 +9,57 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div id="mainpage" class="wrapper">
-        <span class="title"><h1 class="title__main">Agata Bielen</h1></span>
+    <div class="wrapper">
+        <header class="header">
+            <button class="navbtn__previous">previous</button>
+            <span class="maintitle"><h1 class="maintitle__text">Agata Bielen</h1></span>
+            <button class="navbtn__next">next</button>
+        </header>
         <span class="contacts"><a href="#">twitter</a><a href="#">instagram</a></span>
-        <div class="content">
-            <div class="content__wrap content__wrap-cards content__wrap-cardsright">
+        <div class="submenu">
+            <ul class="submenu__wrap">
+                <li class="submenu__Item">
+                    <button class="submenu__btn">01</button>
+                </li>
+                <li class="submenu__Item">
+                    <span class="submenu__divider submenu__divider-lengthy"></span>
+                </li>
+                <li class="submenu__Item">
+                    <button class="submenu__btn submenu__btn-selected">02</button>
+                </li>
+                <li class="submenu__Item">
+                    <span class="submenu__divider submenu__divider-lengthy"></span>
+                </li>
+                <li class="submenu__Item">
+                    <button class="submenu__btn">03</button>
+                </li>
+                <li class="submenu__Item">
+                    <span class="submenu__divider"></span>
+                </li>
+                <li class="submenu__Item">
+                    <button class="submenu__btn">04</button>
+                </li>
+            </ul>
+        </div>
+        <footer class="footer">
+            <div class="footer__left">
+                <div class="databy">
+                    <p class="databy__data">2016.06.13</p>
+                    <span class="databy__divider"></span>
+                    <p class="databy__by">by Jana Ahrens</p>
+                </div>
+                <p class="footer__collnum">Coll. N1</p>
+            </div>
+            <a class="seeall" href="index.html">see all</a>
+            <div class="footer__right">
+                <p class="footer__nextcollnum">Collection N2</p>
+            </div>
+        </footer>
+        <div class="mainpage">
+            <div class="mainpage__wrap mainpage__wrap-cards mainpage__wrap-cardsright">
                 <div class="card">
                     <img class="card__img" src="img/right-line.jpg" alt="Right Line">
-                    <div class="card__title"><h2>Right Line</h2><a href="#">→</a></div>
+                    <div class="card__title"><h2>Right Line</h2><a href="collpage01.html">→</a></div>
                     <p class="collnum">Coll.№1</p>
                 </div>
                 <div class="card">
@@ -25,7 +68,7 @@
                     <p class="collnum">Coll.№2</p>
                 </div>
             </div>
-            <div class="content__wrap content__wrap-list">
+            <div class="mainpage__wrap mainpage__wrap-list">
                 <ul class="list">
                     <li class="list__item">
                         <p class="collnum">Coll.№3</p><p>Storm Line</p><div><a href="#">→</a></div>
@@ -47,7 +90,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="content__wrap content__wrap-list content__wrap-listbottom">
+            <div class="mainpage__wrap mainpage__wrap-list mainpage__wrap-listbottom">
                 <ul class="list">
                     <li class="list__item">
                         <p class="collnum">Coll.№9</p><p>Gold Line</p><div><a href="#">→</a></div>
@@ -66,7 +109,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="content__wrap content__wrap-cards content__wrap-cardsleft">
+            <div class="mainpage__wrap mainpage__wrap-cards mainpage__wrap-cardsleft">
                 <div class="card">
                     <img class="card__img" src="img/arch-line.jpg" alt="Arch Line">
                     <div class="card__title"><h2>Arch Line</h2><a href="#">→</a></div>
@@ -79,7 +122,7 @@
                 </div>
             </div>
         </div>
-        <span class="title"><h1 class="title__footer">see all</h1></span>
     </div>
+    <script src="js/index.js"></script>
 </body>
 </html>

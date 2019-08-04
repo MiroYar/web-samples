@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Верстка из бесплатного макета "AgataBielen"</title>
+    <link rel="stylesheet" href="https://use.typekit.net/nwl7ifr.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header class="header header-oncoll">
+        <button class="navbtn__previous">previous</button>
+        <span class="maintitle"><h1 class="maintitle__text">Agata Bieleń</h1></span>
+        <button class="navbtn__next">next</button>
+    </header>
+    <span class="contacts"><a href="#">twitter</a><a href="#">instagram</a></span>
+    <div class="submenu submenu-oncoll">
+        <ul class="submenu__wrap">
+            <li class="submenu__Item">
+                <button class="submenu__btn">01</button>
+            </li>
+            <li class="submenu__Item">
+                <span class="submenu__divider submenu__divider-lengthy"></span>
+            </li>
+            <li class="submenu__Item">
+                <button class="submenu__btn submenu__btn-selected">02</button>
+            </li>
+            <li class="submenu__Item">
+                <span class="submenu__divider submenu__divider-lengthy"></span>
+            </li>
+            <li class="submenu__Item">
+                <button class="submenu__btn">03</button>
+            </li>
+            <li class="submenu__Item">
+                <span class="submenu__divider"></span>
+            </li>
+            <li class="submenu__Item">
+                <button class="submenu__btn">04</button>
+            </li>
+        </ul>
+    </div>
+    <footer class="footer footer-oncoll">
+        <div class="footer__left">
+            <div class="databy">
+                <p class="databy__data">2016.06.13</p>
+                <span class="databy__divider"></span>
+                <p class="databy__by">by Jana Ahrens</p>
+            </div>
+            <p class="footer__collnum">Coll. N1</p>
+        </div>
+        <a class="seeall" href="index.html">see all</a>
+        <div class="footer__right">
+            <p class="footer__nextcollnum">Collection N2</p>
+        </div>
+    </footer>
+    <div class="content">
+        <div class="collpage">
+            <div class="collpage03">
+                <div class="collpage03__left">
+                    <img class="collpage03__img" src="img/rl-p03.jpg" alt="Right Line">
+                    <p class="collpage03__exposition01">It is a pleasure to observe the different forms the geometric shapes take on when draped around the arm, the neck, the finger or the ear. It is fascinating how they change their appearance when the person wearing them changes posture or position.</p>
+                </div>
+                <div class="collpage03__right">
+                    <p class="collpage03__title">Nature Line · Agata Bieleń</p>
+                    <span class="collpage03__divider01"></span>
+                    <p class="collpage03__exposition02">The most simple forms create the strongest visual effects.</p>
+                    <span class="collpage03__divider02"></span>
+                    <p class="collpage03__share">share</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script>
+        const IMG = document.querySelector('.collpage03__img');
+        const EXPOSITION01 = document.querySelector('.collpage03__exposition01');
+        EXPOSITION01.style.width = `${IMG.offsetWidth}px`;
+    </script>
+</body>
+</html>
